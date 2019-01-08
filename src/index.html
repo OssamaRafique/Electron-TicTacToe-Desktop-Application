@@ -1,0 +1,108 @@
+
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" onload="window.$ = window.jQuery = module.exports;"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,300i,400,400i,500,500i,700,700i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:300,400,500,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+</head>
+
+<body>
+	<div class="container-top">
+		<header>
+			<strong>TIC<span>TAC</span>TOE</strong>
+		    <nav>
+		      <ul>
+		        <li><img src="../assets/images/min.svg" id="min"></li>
+		        <li><img src="../assets/images/close.svg" id="close"></li>
+		      </ul>
+		    </nav>
+		</header>
+	</div>
+
+    <div class="bgLeft"></div>
+    <div class="bgRight"></div>
+    <div class="bgCrossPosition">
+        <div class="bgCross"></div>
+    </div>
+    <div class="bgCirclePosition">
+        <div class="bgCircle"></div>
+    </div>
+
+    <div class="container">
+        <div class="scorePsudo"></div>
+        <!--Make justify-center: space-between displayed evenly-->
+        <div class="score">
+            <div id="scoreCircle">0</div>
+            <div class="turn-tokenCircle"></div>
+        </div>
+
+        <div id="board">
+            <div id="gameSetting">
+                <div class="title">TicTacToe</div>
+
+                <div class="row">
+                    <div class="selectionPlayer"></div>
+                    <div class="btnSetting" id="btnOnePlayer">1 player</div>
+                    <div class="btnSetting" id="btnTwoPlayers">2 players</div>
+                </div>
+
+                <div class="row">
+                    <div class="selectionToken"></div>
+                    <div class="btnSetting" id="btnStartWithCircle"><span></span>Circle</div>
+                    <div class="btnSetting" id="btnStartWithCross"><span></span>Cross</div>
+                </div>
+                <div class="btnPrimary" id="btnStart">Start</div>
+            </div>
+            <!--gameSetting-->
+
+            <div id="boxes">
+                <div class="line line1"></div>
+                <div class="line line2"></div>
+                <div class="line line3"></div>
+                <div class="line line4"></div>
+                <div class="tieMessage">
+                    <div>Tie</div>
+                </div>
+
+                <div class="box" id="box1"><span></span></div>
+                <div class="box" id="box2"><span></span></div>
+                <div class="box" id="box3"><span></span></div>
+                <div class="box" id="box4"><span></span></div>
+                <div class="box" id="box5"><span></span></div>
+                <div class="box" id="box6"><span></span></div>
+                <div class="box" id="box7"><span></span></div>
+                <div class="box" id="box8"><span></span></div>
+                <div class="box" id="box9"><span></span></div>
+            </div>
+            <!--boxes-->
+
+            <div class="btnPrimary" id="btnReset">Reset</div>
+
+        </div>
+        <!--board-->
+
+        <div class="score">
+            <div id="scoreCross">0</div>
+            <div class="turn-tokenCross"></div>
+        </div>
+
+        <div class="scorePsudo"></div>
+    </div>
+    <!--container-->
+
+    <!--My JS-->
+    <script src="../assets/js/main.js"></script>
+    <script src="index.js"></script>
+
+</body>
+
+</html>
